@@ -1,0 +1,53 @@
+Steps of analysis :---
+
+a) Input :---
+
+input parameters can be specified in the 'configuration file':- 'dark_sub.cfg'
+All input parameters are self explanatory 
+
+**Input hot frame is reuqired
+**Input cold frame is optional if no comparison with cold frame is required just replace the input_cold in the .cfg file with 1
+** A directory with dark frames for the observation date of the data is required.
+
+
+
+b) Intemediate files :---
+ i) FITS:-- 
+
+    fits files with the minimizer values will be saved as 
+
+	----->>>> input_hot_suffix + "_dark_" + "i_" + method +'.fits'
+	
+	Subtracted frame for each dark index is saved as :-
+
+	----->>>>> input_hot_suffix + "_dark_" + "i_" + 'diff_' + method +'.fits' 
+
+	where i goes from 0-20 corresponding to the 20 dark frames while  method takes two values depending upon minimization process:--
+	 old method:-- method =='|G(r)|'
+	 chi sq methd :- method =='chisq'  
+ ii) PNG:--- 
+ 	Intermediatiate PNG files for photometry step, verification step and value of minimizer as a function of dark are also saved.
+ iii) TXT:---
+   The text file stores the information of parameters , A, K and ind (refer to documentation)
+
+
+
+c) Output:--
+   Final output is the dark subtracted frame with name 
+
+   sub_name = input_flt.replace("flt", "drk_flt")  (line 178 of the code)
+
+
+
+
+Briefly these are all the steps  that are performed:--
+
+
+
+1) creating directories for intermediate files ... 
+2) creating apertures for circular annuli
+3) performing photometry on input cold and hot frames
+4) creating table to write the output for dark subtraction process
+5) Performing dark subtraction
+6) plotting the minimization values now
+7) plotting the difference image now ..... with galaxy
