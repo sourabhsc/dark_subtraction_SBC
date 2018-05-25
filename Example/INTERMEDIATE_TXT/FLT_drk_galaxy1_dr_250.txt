@@ -1,0 +1,4 @@
+# galaxy name galaxy1 Output drk values calculated on FLT images for future preference      !Remember the corrresponding plots have sky value per exposure time 
+file_name dark_radii ind A_min K_min diff_ar exp_time
+jctd43pqq_flt.fits 250.0 19.0 0.4783304035663605 0.005540946032851934 0.0005069342441856861 400.0
+jctd43pqq_flt.fits 250.0 19.0 0.5 0.004999999888241291 0.5570400357246399 400.0

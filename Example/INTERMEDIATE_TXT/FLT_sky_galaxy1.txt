@@ -1,0 +1,3 @@
+# galaxy  with name galaxy1 Output sky values calculated on FLT images for future preference     !Remember the corrresponding plots have sky value per exposure time 
+file_name sky_value exp_time filter name
+jctd43pkq_flt.fits 0.007907869294285774 400.0 F125 galaxy1
