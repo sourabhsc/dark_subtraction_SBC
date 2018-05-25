@@ -106,7 +106,7 @@ Each run of the code produces output dark subtracted files for both minimization
    
    * Sky subtracted output :- 
    ```
-    dark_sub_name = input_flt.replace("flt", "sky_flt")
+    sky_sub_name = input_flt.replace("flt", "sky_flt")
    ```
    
 I am still updaing the documentaion for intermediate files.
