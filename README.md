@@ -1,6 +1,7 @@
+![alt text](https://github.com/sourabhsc/dark_subtraction_sbc/]/blob/master/dark.png?raw=true)
 
 # Dark subtraction HST SBC
-For a given HST SBC fram, this code performs dark subtraction and sky subtraction. Whether a frame requires dark subtraction or not is based on temperature cut off of 22 C. The code implements two differnt methods of minimization process to determine the appropriate dark. Two separate methods to mask the contribution of galaxy are also implemented. For each method output dark subtracted of sky subtracted frames are produced. 
+For a given HST SBC frame, this code performs dark subtraction and sky subtraction. Whether a frame requires dark subtraction or not is based on temperature cut off of 22 C. The code implements two differnt methods of minimization process to determine the appropriate dark. Two separate methods to mask the contribution of galaxy are also implemented. For each method output dark subtracted of sky subtracted frames are produced. 
 
 
 ## Getting Started
